@@ -1,0 +1,71 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: url(../registro/img/bg.jpg) no-repeat center top;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.login-container {
+  background: #000000d5;
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #0a0808;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #ffffff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--btn-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+button:hover {
+  background-color: var(--btn-color);
+}
+
+.back-btn {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background-color: var(--btn-color);
+  border-radius: 80px;
+  padding: 10px;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}

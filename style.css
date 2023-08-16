@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+
+.container {
+    height: 120px;
+    background: black;
+    width: 100%;
+    
+    }
+
+.navbar {
+    width: 45%;
+    max-height: 15vw;
+    margin:auto;
+    /*padding: 35px 0;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.navbar i{
+    
+    font-size: 36px;
+    display: none;
+}
+
+#toggle-menu{
+    display: none;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Roboto, "sans-serif";
+    font-size: 1.2rem;
+}
+
+.navbar ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: yellowgreen;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+    
+}
+
+.navbar ul li:hover::before {
+    width: 100%;
+}
+
+.hero{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+}
+  
+
+
+  
+.header-overlay {
+  position: absolute;
+  height: 800px;
+  width: 100%;
+  padding-top: 300px;
+  background: #303952;
+  opacity: .85;
+}
+
+h1{ 
+  color: white;
+  position: absolute;
+  padding-top: 180px;
+  font-size: 80px;
+  background: none;
+  font-family:"valorant";
+}
+
+h2{
+  color: white;
+  position: absolute;
+  padding-top: 100px;
+  background: none;
+  font-size: medium;
+}
+
+.hero a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.button {
+    z-index: 2;
+    margin-top: 30%;
+    color: white;
+    background: none;
+    width: 12%;
+    height: 10%;
+    position: absolute;
+    border-radius: 5px;
+    border: black 1px solid;
+    font-size:larger;
+    }
+    
+
+    .button:hover {
+       
+        transition: 1s ease-out ;
+        background: yellowgreen;
+        color: black;
+    
+    }
+
+
+    @media(max-width:760px){
+        .navbar ul {
+            background: black;
+            width: 100%;
+            position: absolute;
+            top: 120px;
+            left: 0;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            display: none;
+        }
+
+        .navbar i{
+            position: absolute;
+            display: block;
+            color: white;
+        }
+
+        #toggle-menu:checked ~ ul {
+            display: flex;
+            position: absolute;
+        }
+        .link-navbar{
+            position: fixed;
+        }
+
+        .button{
+            margin-top: 50%;
+            height: 50px; 
+
+        }
+        
+        }
+
+        
+        
+        @media (max-width: 400px){
+
+        
+        
+           
+
+            .navbar{
+                padding-top: 100px;
+                width: 100%;
+                height: 100%;
+                
+                position: absolute;
+            }
+
+            .logo{
+               
+                display: flex;
+                padding-left: 120px;
+    
+            }
+
+
+            .header-overlay{
+                background: none;
+            }
+
+            .hero video {
+                margin-top: 200px;
+                padding-top: 200px;
+                width: 100%;
+                height: 100%;
+            }
+
+            
+
+            .hero h1{
+                padding-top: 200px;
+                font-size: 50px;
+            }
+
+            .hero h2{
+                padding-top: 280px;
+            }
+
+            .button{
+                padding-top: 140px;
+                font-size:20px ;
+                width: 10px;
+                height: 20px;
+                border: none;
+            }
+
+        }
+
+   
+
+
+
+  
+
+
+
+
+
+
+
