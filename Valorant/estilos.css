@@ -135,7 +135,7 @@
 
 .pie-pagina{
     width: 100%;
-    background-color: #0a141d;
+    background-color: black;
 }
 
 .box{
@@ -143,6 +143,7 @@
     align-items: center;
     justify-content: center;
     padding-left: 60px;
+    
 }
 .pie-pagina .grupo-1{
     width: 100%;
@@ -174,22 +175,70 @@
 }
 
 .pie-pagina .grupo-2{
-    background-color: #0a1a2a;
+    background-color: black;
     padding: 15px 10px;
     text-align: center;
     color: #fff;
+    box-shadow: 5px 5px 5px 5px rgba(103, 1, 255, 0.271);
 }
 .pie-pagina .grupo-2 small{
     font-size: 15px;
 }
 @media screen and (max-width:760px){
 
+    .main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar{
+        display: flex;
+        width: 100%;
+        padding-left: 40%;
+    }
+
+    .logo{
+        width: 20%;
+    }
+
+    #hero{
+        width: 100%;
+        height: 50px;
+        margin: 10px;
+    }
+
+    .pjs{
+        display: grid;
+        place-items: center;
+        
+    }
+
+    .img-pjs{
+        
+        display: grid;
+        place-items: center;
+    }
+
+
+    .caja1{
+        width: 200px;
+        padding-right: 200px;
+    }
+
+    .caja2{
+        width: 300px;
+        padding-right: 200px;
+    }
     
-    
+
+    .volver{
+        width: 25%;
+    }
     
     
     .pie-pagina .grupo-1{
-        width: 100%;
+        width: 90%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap:30px;
         padding: 35px 0px;
